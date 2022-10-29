@@ -34,8 +34,8 @@ Additionally, I installed:
 It is in capital letters for a reason! Full-stack JS! I don't even need **express** with this. But a stateful backend can sometimes be useful. Next.JS is fast, reliable, easy-to-use and by far my favourite JS library (**Qwik.js** is *qwik-ly* catching up ^^)
 
 ## NextJS rant
-**React-Query** would have been a nice addition but it requires more setup to integrate with NextJS. It is much better than Redux and a lot easier to use than React Context; I would love to use Next.JS 13 with React Server Components and the new `use` hook (which unwraps responses!) but it needs to mature a little more. I can't use my favourite libraries and interactions are much worse (you have to specify client components with `"use client"` at the top of the file!). Astro really does it better. However Astro is suited to pages where the content does not change from user to user (like Blogs!), while Next.js is really for cases like this - each user will see a different list of contracts
- - 
+React-Query would have been a nice addition but it requires more setup to integrate with NextJS. It is much better than Redux and a lot easier to use than React Context; I would love to use Next.JS 13 with React Server Components and the new `use` hook (which unwraps responses!) but it needs to mature a little more. I can't use my favourite libraries and interactions are much worse (you have to specify client components with `"use client"` at the top of the file!). Astro really does it better. However Astro is suited to pages where the content does not change from user to user (like Blogs!), while Next.js is really for cases like this - each user will see a different list of contracts
+
 ## Would I have chosen different libraries?
  - I like TypeORM so if the backend was built in Typescript this is what I would have used. I especially like its style of using decorators;
  - Alternatively, for a bigger project, Prisma would have been amazing. Paired with a PostgresQL database, it is performant and unstoppable;
