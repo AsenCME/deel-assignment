@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Kanit";
+    font-weight: 700;
+    src: url("../public/fonts/Kanit/Kanit-Bold.ttf");
+  }
+  @font-face {
+    font-family: "Nunito";
+    font-weight: 400;
+    src: url("../public/fonts/Nunito/Nunito-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Nunito";
+    font-weight: 700;
+    src: url("../public/fonts/Nunito/Nunito-Bold.ttf");
+  }
+
+  * {
+    font-family: "Nunito";
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Kanit";
+  }
+  h1 {
+    @apply text-4xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-xl;
+  }
+
+  .hoverable {
+    @apply bg-gray-50 border-2 border-gray-50 hover:bg-gray-100 hover:border-gray-300 transition;
+  }
+}

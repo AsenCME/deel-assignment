@@ -1,0 +1,22 @@
+version: "3.8"
+services:
+  client:
+    build: ./client
+    command: npm run dev --turbo
+    container_name: client
+    ports:
+      - 3000:3000
+    volumes:
+      - ./client:/app
+      - /app/node_modules
+  server:
+    build: ./server
+    command: npm run start
+    container_name: server
+    environment:
+      PORT: 3001
+    ports:
+      - 3001:3001
+    volumes:
+      - ./server:/app
+      - /app/node_modules
